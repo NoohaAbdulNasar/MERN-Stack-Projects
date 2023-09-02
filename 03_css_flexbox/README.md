@@ -3,4 +3,4 @@
 
 🖥 Site: [Flexbox Pricing Table][def]
 
-[def]: https://website-design-agency.netlify.app/
+[def]: https://flexbox-pricing-table.netlify.app/
