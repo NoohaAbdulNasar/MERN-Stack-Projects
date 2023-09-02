@@ -3,4 +3,4 @@ This repository holds the code for Nihma's blend of captivating artwork and poet
 
 🖥 Site: [Art Shopping Site][def]
 
-[def]: https://strokes_by_nihma.netlify.app/
+[def]: https://strokes-by-nihma.netlify.app/
