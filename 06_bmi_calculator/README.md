@@ -3,4 +3,4 @@ This is a simple BMI (Body Mass Index) calculator web application that allows us
 
 🖥 Site: [Calculate your BMI][def]
 
-[def]: https://bmi-calculator.netlify.app/
+[def]: https://bmi-calculator-online.netlify.app/
