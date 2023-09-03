@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BMI Calculator</title>
+    <style>
+        header {
+            background-color: #3586ff;
+            padding: 10px;
+            text-align: left;
+        }
+
+        header p{
+            color: #fff;
+            padding-left: 20px;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b8def8;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .calculator {
+            display: flex;
+            flex-direction: column;
+            line-height: 2rem;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 20px;
+            width: 300px;
+            height: 90vh;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            margin: 20px auto;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hidden{
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: #3586ff;
+            padding: 20px;
+            margin-top: 5%;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+
+    <header>
+        <p>BMI Calculator</p>
+    </header>
+    <div class="calculator">
+        <h1>BMI Calculator</h1>
+        <label for="weight">Weight (kg):</label>
+        <input type="text" id="weight" placeholder="Enter your weight">
+        <label for="height">Height (m):</label>
+        <input type="text" id="height" placeholder="Enter your height">
+        <input type="button" value="Calculate BMI" onclick="calculateBMI()">
+        <div class="hidden" id="result"></div>
+        <div class="hidden" id="message"></div>
+    </div>
+
+    <footer>
+        BMI Calculator ©2023 Nooha. All rights reserved.
+    </footer>
+
+    <script>
+        function calculateBMI() {
+            var weight = parseFloat(document.getElementById("weight").value);
+            var height = parseFloat(document.getElementById("height").value);
+
+            if(isNaN(weight) || isNaN(height) || height <= 0 || weight <= 0){
+                document.getElementById("result").innerHTML = "Please enter valid values for weight and height.";
+                document.getElementById("message").innerHTML = "";
+                return;
+            }
+            
+            var bmi = weight / (height*height);
+            document.getElementById("result").innerHTML = "Your BMI is " + bmi.toFixed(2);
+
+            var message = getBMIMessage(bmi);
+            document.getElementById("message").innerHTML = message;
+        }
+
+        function getBMIMessage(bmi) {
+            if (bmi < 18.5) {
+                return "You are underweight💔.";
+            } else if (bmi >= 18.5 && bmi <= 24.9) {
+                return "You have a normal weight ❤️.";
+            } else {
+                return "You are overweight💔🚫.";
+            }
+        }
+    </script>
+  </body>
+</html>
