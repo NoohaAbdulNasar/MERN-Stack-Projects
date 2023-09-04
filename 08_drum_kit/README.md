@@ -3,4 +3,4 @@ The Drum Kit project is an interactive web application that simulates a digital 
 
 🖥 Site: [Digital Drum Kit][def]
 
-[def]: https://digital-drum-kit.netlify.app/
+[def]: https://drum-kit-digital.netlify.app/
