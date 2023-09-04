@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>🎲Dice Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="first box">
+        <h1>Enter player names</h1>
+        <form id="playerForm">
+          <label for="weight">Player 1:</label>
+          <input type="text" id="player1" placeholder="Enter first player name" required>
+          <label for="height">Player 2:</label>
+          <input type="text" id="player2" placeholder="Enter second player name" required>
+          <button id="startLink">Get started 🎲</button>
+        </form>
+      </div>
+      
+      <div class="second box">
+        <h1>Roll the Dice!</h1>
+        <p>Player 1 vs Player 2</p>
+      <a href="#" id="diceLink" class="rotate-link">🎲</a>
+      </div>
+
+      <div class="third box">
+        <div class="flex-box">
+          <div class="dice">
+            <h1>Player 1</h1>
+            <img class="img1" src="images/dice6.png">
+            <p id="playerOne">Player 1</p>
+          </div>
+  
+          <div class="dice">
+            <h1>Player 2</h1>
+            <img class="img2" src="images/dice6.png">
+            <p id="playerTwo">Player 2</p>
+          </div>
+        </div>
+        
+        <h2>Winner Name</h2>
+        <button id="retryButton">Retry the Dice Roll</button> 
+        <button id="newPlayerButton">Start with New Players</button>
+      </div>
+      </div>
+      
+
+    <script src="script.js"></script>
+  </body>
+
+  <footer>
+    🎲 Dice Game © Nooha 2023. All rights reserved.
+  </footer>
+</html>
