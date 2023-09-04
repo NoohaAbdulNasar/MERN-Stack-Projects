@@ -1,5 +1,5 @@
 # Dice Game
-This  is a simple two-player dice rolling game. The winner based on the outcome of the dice rolls.
+This  is a simple two-player dice rolling game. This game provides a fun and interactive way for two players to enjoy a virtual dice rolling experience and compete to see who comes out as the winner. 
 
 ### Features
 * Players can enter their names to personalize the game.
