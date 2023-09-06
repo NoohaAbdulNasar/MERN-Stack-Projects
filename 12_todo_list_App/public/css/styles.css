@@ -1,0 +1,321 @@
+/* Basic styling for webpages */
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+h2, h3 {
+  color: #A683E3;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+ul {
+  margin-left: 10px;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+  list-style: none;
+}
+
+/* Styling for boxes*/
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for the main greeting section */
+#frontPageGreeting { 
+  background: linear-gradient(300deg, #6227c9, #885ad6, #A683E3);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  margin: 0;
+  padding: 0; /* Add this line */
+
+}
+
+#frontPagePara{
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+} 
+
+/* Styling for flex boxes */
+.flex{
+  display: flex;
+  max-width: 1400px;
+ 
+}
+
+.flex-box{
+  min-width: 310px;
+  max-width: 350px;
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  border: #A683E3 solid 1px;
+  box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.flex-p{
+  font-size: medium;
+  text-align:justify;
+}
+
+@media (max-width: 1366px) {
+  .flex{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Styling for horizontal rule */
+hr {
+  border: 0;
+  height: 1px;
+  margin: 0;
+  background-image: linear-gradient(to right,  #ffffff, #A683E3, #ffffff);
+}
+
+/* Styling for quotes */
+.quote {
+  font-style: italic;
+  max-width: 1000px;
+  text-align: center;
+  color: #A683E3;
+}
+
+.quote span {
+  display: block;
+  font-size: 1.2rem;
+  color: #888;
+  margin: 20px 0;
+}
+
+/* Styling for buttons */
+#getStartedButton {
+  width: auto !important;
+  background-color: #fff;
+  color: #A683E3;
+  box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.3);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#getStartedButton:hover {
+  background-color: #ccc;
+}
+
+/* Styling for sections */
+.section {
+  margin: 50px auto;
+  text-align: center;
+  background: white;
+}
+
+.section-box{
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for category section */
+#categories{
+  max-width: 400px;
+  margin: 20px;
+}
+
+#categories h2{
+  margin-bottom: 20px;
+}
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.category-li{
+  display: inline-flex;
+}
+
+ul.category-item li a.categoryLink {
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 45px;
+}
+
+.categoryLink{
+  color: white;
+  background-color: #A683E3;
+  padding: 0.5rem;
+  margin: 10px auto;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.wrapper {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+#categoryTrophy{
+  margin: 0;
+}
+
+#categoryTrophy li{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+	margin: 20px 0;
+  background-color: #e7dbfc;
+	box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+	padding: 1.5rem;
+	border-radius: 1rem;
+  max-width: 400px;
+}
+
+#categoryTrophy li::before {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='2em' viewBox='0 0 576 512'%3E%3Cpath d='M400 0H176c-26.5 0-48.1 21.8-47.1 48.2c.2 5.3 .4 10.6 .7 15.8H24C10.7 64 0 74.7 0 88c0 92.6 33.5 157 78.5 200.7c44.3 43.1 98.3 64.8 138.1 75.8c23.4 6.5 39.4 26 39.4 45.6c0 20.9-17 37.9-37.9 37.9H192c-17.7 0-32 14.3-32 32s14.3 32 32 32H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H357.9C337 448 320 431 320 410.1c0-19.6 15.9-39.2 39.4-45.6c39.9-11 93.9-32.7 138.2-75.8C542.5 245 576 180.6 576 88c0-13.3-10.7-24-24-24H446.4c.3-5.2 .5-10.4 .7-15.8C448.1 21.8 426.5 0 400 0zM48.9 112h84.4c9.1 90.1 29.2 150.3 51.9 190.6c-24.9-11-50.8-26.5-73.2-48.3c-32-31.1-58-76-63-142.3zM464.1 254.3c-22.4 21.8-48.3 37.3-73.2 48.3c22.7-40.3 42.8-100.5 51.9-190.6h84.4c-5.1 66.3-31.1 111.2-63 142.3z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* Styling for delete icon */
+#delete-icon {
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  }
+
+  .bi-trash3-fill {
+    transition: transform 0.2s ease-in-out;
+}
+
+.bi-trash3-fill:hover {
+    animation: shake 0.3s ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes shake {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-2px); }
+    50% { transform: translateY(2px); }
+    75% { transform: translateY(-2px); }
+    100% { transform: translateY(0); }
+}
+
+/* Styling for todo list item page */
+#greeting{
+  color: #A683E3;
+  text-align: center;
+  margin: 50px auto;
+}
+
+#heading {
+  background-color: #A683E3;
+  text-align: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.instructions {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  border: #6227c9 solid 1px;
+}
+
+.instructionList li::before {
+  content: "➡";
+  color: #A683E3; 
+  margin-right: 5px;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+/*Styling for new item button*/
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #A683E3;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+/*Styling for about section*/
+.aboutDiv{
+  text-align: justify;
+  margin: 50px auto;
+  max-width: 1000px;
+}
