@@ -3,4 +3,4 @@ A simple web-based QR code generator that allows users to input a URL and genera
 
 🖥 Site: [QR Code Generator][def]
 
-[def]: https://qr-code-generator-online.netlify.app/
+[def]: https://online-qr-code-generator.onrender.com/
