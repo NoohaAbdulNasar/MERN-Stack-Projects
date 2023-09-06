@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+
+        <form method="post">
+            <label for="URL">Type in your URL:</label>
+            <input type="text" id="URL" name="URL" required>
+            <button type="submit">Generate QR Code</button>
+        </form>
+        <% if (error) { %>
+            <p class="error"><%= error %></p>
+        <% } %>
+        
+        <% if (qrCodeData) { %>
+            <h2>Your QR Code:</h2>
+            <img src="/qr_img.png" alt="QR Code">
+            <p>URL: <%= qrCodeData %></p>
+        <% } %>
+    </div>
+    
+    <footer>
+        <p>Created by Nooha ☺ </p>
+    </footer>
+    
+</body>
+</html>
