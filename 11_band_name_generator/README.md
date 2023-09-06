@@ -3,4 +3,4 @@ A simple web application that generates unique band names for your musical proje
 
 🖥 Site: [Create your own Band Name][def]
 
-[def]: https://band-name-generator.onrender.com/
+[def]: https://band-name-generator-wz1o.onrender.com/
