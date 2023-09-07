@@ -13,4 +13,4 @@ Whisper Secrets is a simple web application built with Express.js that fetches a
 
 🖥 Site: [Discover some secrets here][def]
 
-[def]: https://to-do-app-2py3.onrender.com/
+[def]: https://secrets-whisper.onrender.com
