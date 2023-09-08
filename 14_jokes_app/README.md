@@ -6,8 +6,8 @@ THis is a capstone project which is built using Node.js and Express.js, with dyn
 * CSS
 * Node.js
 * Express.js
-* [Joke API](https://sv443.net/jokeapi/v2/) - Read about Joke API
+* Joke API - [Read about Joke API](https://sv443.net/jokeapi/v2/)
 
-🖥 Site: ["Ready to LOL?][def]
+🖥 Site: [Ready to LOL?][def]
 
 [def]: https://online-joke-app.onrender.com
