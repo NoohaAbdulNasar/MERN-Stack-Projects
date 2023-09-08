@@ -28,7 +28,6 @@ app.post('/submit', async (req, res) => {
         // Fetch a joke based on the category
         const jokeCategory = await axios.get(`https://v2.jokeapi.dev/joke/${category}//safe-mode`);
     
-        // Check if the response contains a valid joke
         if (jokeCategory.data.error === false) {
           if (jokeCategory.data.type === 'single') {
             let jokeType = 'single';
@@ -42,11 +41,9 @@ app.post('/submit', async (req, res) => {
             res.status(404).send('Invalid joke type.');
           }
         } else {
-          // Handle the case where there's an error or no valid joke for the selected category
           res.status(404).send('No valid joke found for this category.');
         }
       } catch (error) {
-        // Handle any errors that occurred during the request
         console.error('Error:', error.message);
         res.status(500).send('An error occurred while fetching the joke.');
       }

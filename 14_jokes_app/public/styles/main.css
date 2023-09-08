@@ -1,62 +1,82 @@
-:root {
-  --card-height: 65vh;
-  --card-width: calc(var(--card-height) / 1.5);
-}
-
-body {
-  min-height: 100vh;
-  background: #212534;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  box-sizing: border-box;
-}
-h1 {
-  color: white;
+/* Global Styles */
+* {
   font-family: "Titan One", cursive;
-  margin-bottom: 20px;
 }
 
-a{
-  background-color: aliceblue;
+h1 {
+  color: #caf3fd;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
-.card {
+/* Body Styles */
+body {
+  background: #212534;
+  margin: 0;
+}
+
+/* Header Styles */
+header {
+  color: white;
+  padding: 10px;
+  border-bottom: #58C7FA solid 1px;
+}
+
+header p {
+  padding-left: 10px;
+}
+
+/* Container Styles */
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+/* Button Styles */
+button {
+  border: none;
+}
+
+.buttonAnimation {
   background-color: #212534;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: var(--card-width);
-  height: var(--card-height);
+  width: 250px;
+  height: 50px;
+  margin: 1rem;
   padding: 3px;
   position: relative;
   border-radius: 6px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  display: flex;
-  flex-direction: column;
   font-size: 1.5em;
-  color: rgb(88 199 250 / 0%);
+  color: #ccc;
   font-family: "Gloria Hallelujah", cursive;
 }
 
-.card:hover {
+.buttonAnimation:hover {
   color: rgb(88 199 250 / 100%);
-  transition: color 1s;
+  transition: color 0.8s;
+  border: #58C7FA solid 1px;
 }
-.card:hover:before,
-.card:hover:after {
+
+.buttonAnimation:hover:before,
+.buttonAnimation:hover:after {
   animation: none;
   opacity: 0;
 }
 
-.card::before {
+.buttonAnimation::before {
   content: "";
-  width: 104%;
-  height: 102%;
+  width: 106%;
+  height: 126%;
   border-radius: 8px;
   background-image: linear-gradient(
     var(--rotate),
@@ -66,15 +86,15 @@ a{
   );
   position: absolute;
   z-index: -1;
-  top: -1%;
-  left: -2%;
+  top: -13%;
+  left: -3%;
   animation: spin 2.5s linear infinite;
 }
 
-.card::after {
+.buttonAnimation::after {
   position: absolute;
   content: "";
-  top: calc(var(--card-height) / 6);
+  top: calc(50px / 6);
   left: 0;
   right: 0;
   z-index: -1;
@@ -82,7 +102,7 @@ a{
   width: 100%;
   margin: 0 auto;
   transform: scale(0.8);
-  filter: blur(calc(var(--card-height) / 6));
+  filter: blur(calc(50px / 6));
   background-image: linear-gradient(
     var(--rotate),
     #5ddcff,
@@ -93,6 +113,7 @@ a{
   transition: opacity 0.5s;
   animation: spin 2.5s linear infinite;
 }
+
 @property --rotate {
   syntax: "<angle>";
   initial-value: 132deg;
@@ -108,28 +129,29 @@ a{
   }
 }
 
-.joke{
-  width: var(--card-width);
-  height: var(--card-height);
-  background-image: linear-gradient(
-    var(--rotate),
-    #5ddcff,
-    #3c67e3 43%,
-    #4e00c2
-  );
-  animation: spin 2.5s linear infinite;
+/* Joke Section Styles */
+.joke {
+  width: 65vw;
+  text-align: center;
 }
 
-a {
-  color: #212534;
+.joke a {
+  background-color: #212534;
   text-decoration: none;
-  font-family: sans-serif;
-  font-weight: bold;
-  margin-top: 2rem;
+  padding: 0 10px;
 }
 
-.user {
+.joke p {
+  color: #5ddcff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Footer Styles */
+footer {
   color: white;
-  font-size: 24px;
-  font-family: "Titan One", cursive;
+  padding: 10px;
+  text-align: center;
+  font-size: small;
+  border-top: #58C7FA solid 1px;
 }

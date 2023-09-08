@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/main.css">
-  <title>Joke App</title>
-</head>
-<body>
-  <h1>Joke App</h1>
-<% categoriesList.forEach(function(category) { %>
-    <form action="/submit" method="post">
-        <input type="hidden" name="category" value="<%= category %>">
-        <button class="card" type="submit"><%= category %></button>
-      </form>
-<% }) %>
-</body>
-</html>
+<%- include('partials/header') %>
+
+  <div class="container">
+    <h1> Choose a category and laugh your head off🤣.</h1>
+    <% categoriesList.forEach(function(category) { %>
+      <form action="/submit" method="post">
+          <input type="hidden" name="category" value="<%= category %>">
+          <button class="buttonAnimation" type="submit"><%= category %></button>
+        </form>
+    <% }) %>
+  </div>
+  
+<%- include('partials/footer') %>

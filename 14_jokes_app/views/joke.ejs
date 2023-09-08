@@ -1,26 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/main.css">
-  <title>Joke App</title>
-</head>
-<body>
+<%- include('partials/header') %>
 
-<h1>Joke</h1>
+    <div class="container">
+        <div class="joke">
+            <img src="/images/lol.png" width="100" alt="Laugh out loud" />
+            <% if (jokeType === 'single') { %>
+                <p><%= joke %></p>
+            <% } else if (jokeType === 'twopart') { %>
+                <p><%= setup %></p>
+                <p><%= delivery %></p>
+            <% } else { %>
+                <p>Please reload!</p>
+            <% } %>
+            <a class="buttonAnimation" href="/">Go back</a>
+        </div>
+    </div>
 
-<div class="joke">
-<% if (jokeType === 'single') { %>
-    <p class="user"><%= joke %></p>
-<% } else if (jokeType === 'twopart') { %>
-    <p class="user"><%= setup %></p>
-    <p class="user"><%= delivery %></p>
-<% } else { %>
-    <p class="user">Invalid joke type.</p>
-<% } %>
-<a href="/">Go back</a>
-</div>
-
-</body>
-</html>
+<%- include('partials/footer') %>
