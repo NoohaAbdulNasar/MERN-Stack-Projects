@@ -1,0 +1,10 @@
+<h1>Joke</h1>
+<% if (jokeType === 'single') { %>
+    <p><%= joke %></p>
+<% } else if (jokeType === 'twopart') { %>
+    <p><%= setup %></p>
+    <p><%= delivery %></p>
+<% } else { %>
+    <p>Invalid joke type.</p>
+<% } %>
+<a href="/">Go back</a>
