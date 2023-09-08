@@ -1,10 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/main.css">
+  <title>Joke App</title>
+</head>
+<body>
+
 <h1>Joke</h1>
+
+<div class="joke">
 <% if (jokeType === 'single') { %>
-    <p><%= joke %></p>
+    <p class="user"><%= joke %></p>
 <% } else if (jokeType === 'twopart') { %>
-    <p><%= setup %></p>
-    <p><%= delivery %></p>
+    <p class="user"><%= setup %></p>
+    <p class="user"><%= delivery %></p>
 <% } else { %>
-    <p>Invalid joke type.</p>
+    <p class="user">Invalid joke type.</p>
 <% } %>
 <a href="/">Go back</a>
+</div>
+
+</body>
+</html>
