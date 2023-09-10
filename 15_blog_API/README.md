@@ -21,7 +21,7 @@ To run this project locally, follow these steps:
 
 1. Clone this repository to your local machine:
 
-   git clone https://github.com/your-username/blog-api-project.git
+   git clone https://github.com/NoohaAbdulNasar/WebDevBootcamp-Projects/tree/main/15_blog_API
 
 2. Navigate to the project directory:
 
@@ -30,17 +30,17 @@ To run this project locally, follow these steps:
 3. Install the project dependencies for both the server and the API:
 
     npm install
-4. Usage
-    a) Starting the API Server
+4. Usage  
+    a) Starting the API Server  
 
         nodemon index.js
         The API server will be running at http://localhost:4000.
 
-    b) Starting the Server (Frontend)
+    b) Starting the Server (Frontend)  
         Open a new terminal window/tab:
 
         nodemon server.js
         The frontend server will be running at http://localhost:3000.
 
-5. Accessing the Application
+5. Accessing the Application  
     Open your web browser and visit http://localhost:3000.
