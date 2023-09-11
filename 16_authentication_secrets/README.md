@@ -13,6 +13,9 @@ This application supports OAuth authentication with both Google and Facebook.
 ## Screenshots of Secrets App
 
 ### Home Page
+![Home](public/screenshots/homepage.png)
+
+### Login Page
 ![Login](public/screenshots/login.png)
 
 ### Secret Shared in App
