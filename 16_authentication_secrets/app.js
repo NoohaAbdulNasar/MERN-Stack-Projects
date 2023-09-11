@@ -12,8 +12,6 @@ const findOrCreate = require('mongoose-findorcreate');
 
 const app = express();
 
-console.log(process.env);
-
 app.use(express.static("public"));
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({
@@ -79,7 +77,8 @@ passport.use(new FacebookStrategy({
     callbackURL: "http://localhost:3000/auth/facebook/secrets"
   },
   function(accessToken, refreshToken, profile, cb) {
-    User.findOrCreate({ facebookId: profile.id }, function (err, user) {
+    console.log(profile);
+    User.findOrCreate({ username: profile.displayName, facebookId: profile.id }, function (err, user) {
       return cb(err, user);
     });
   }
