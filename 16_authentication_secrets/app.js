@@ -35,7 +35,8 @@ const userSchema = new mongoose.Schema({
     email: String,
     password: String,
     googleId: String,
-    facebookId: String
+    facebookId: String,
+    secret: String
 });
 
 userSchema.plugin(passportLoacalMongoose);
@@ -118,12 +119,38 @@ app.get("/register", async(req, res)=>{
     res.render("register");
 });
 
-app.get("/secrets", (req,res)=>{
+app.get("/secrets", async(req,res)=>{
+    try{
+        const foundUsers = await User.find({"secret": {$ne: null}});
+        if(foundUsers){
+            res.render("secrets", {usersWithSecrets: foundUsers});
+        }
+    } catch(err){
+        console.error(err);
+    }
+});
+
+app.get("/submit", (req,res)=>{
     if(req.isAuthenticated()){
-        res.render("secrets");
+        res.render("submit");
     } else {
         res.redirect("/login");
     }
+});
+
+app.post("/submit", async(req,res)=>{
+    const submittedSecret = req.body.secret;
+
+    try {
+        const foundUser = await User.findOne({ _id: req.user.id });
+        if (foundUser) {
+          foundUser.secret = submittedSecret;
+          await foundUser.save();
+          res.redirect("/secrets");
+        } 
+      } catch (err) {
+        console.error(err);
+      }
 });
 
 app.get("/logout", function(req, res){
