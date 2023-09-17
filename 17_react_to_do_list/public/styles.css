@@ -17,7 +17,7 @@ body {
   height: auto;
   min-height: 500px;
   max-width: 500px;
-  min-width: 250px;
+  min-width: 300px;
   background: #f1f5f8;
   background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
   background-size: 25px 25px;
@@ -26,6 +26,7 @@ body {
   padding: 1rem;
   box-sizing: border-box;
 }
+
 .heading {
   display: flex;
   align-items: center;
@@ -72,8 +73,16 @@ button span {
   border: 2px solid hsl(198, 1%, 29%);
 }
 
+ul{
+  padding: 10px;
+}
+
 li {
-  text-align: left;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
   position: relative;
   padding: 0.5rem;
 }
+
+
