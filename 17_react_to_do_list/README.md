@@ -3,4 +3,4 @@ This is a simple to-do list application built with React. It allows users to add
 
 🖥 Site: [To-do App][def]
 
-[def]: https://to-do-app-react.netlify.app/
+[def]: https://to-do-react-app-bbkr.onrender.com
