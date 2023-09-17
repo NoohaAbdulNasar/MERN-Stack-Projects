@@ -1,0 +1,11 @@
+# Node.js dependencies
+node_modules/
+
+# Compiled output
+build/
+dist/
+
+# Logs and debugging
+logs/
+*.log
+npm-debug.log*
