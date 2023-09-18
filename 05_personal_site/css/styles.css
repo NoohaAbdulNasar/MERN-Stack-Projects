@@ -34,10 +34,9 @@
   
   h2 {
     color: #66bfbf;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2.5rem;
-    font-weight: normal;
-    padding-bottom: 10px;
+    font-family: "Sacramento", cursive;
+    font-size:4rem;
+    margin-bottom: 20px;
   }
   
   h3 {
@@ -49,6 +48,7 @@
   /* Paragraph styles */
   p {
     line-height: 2;
+    font-size: 1rem;
   }
   
   /* Link styles */
@@ -93,6 +93,8 @@
   
   /* Typewriter animation styles */
   .typing h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
     overflow: hidden;
     border-right: 0.15em solid #11999e;
     white-space: nowrap;
@@ -158,8 +160,14 @@
     margin: auto 0px auto 30px;
   }
 
+  .contact-me{
+    width: 50%;
+    margin: auto;
+  }
+
   .msg {
     font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
     color: #11999e;
     width: 60%;
     margin: 0 auto;
@@ -171,6 +179,7 @@
     background: linear-gradient(to bottom, #66bfbf, #11999e);
     border-radius: 8px;
     color: #ffffff;
+    margin-top: 30px;
     padding: 10px;
     display: inline-block;
   }
