@@ -9,4 +9,4 @@ This  is a simple two-player dice rolling game. This game provides a fun and int
 
 🖥 Site: [Play Dice Game][def]
 
-[def]: https://dice-game-online.netlify.app/
+[def]: https://online-dice-game.netlify.app/
