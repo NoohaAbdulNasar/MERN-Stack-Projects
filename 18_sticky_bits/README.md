@@ -3,4 +3,4 @@ StickyNotes is a simple web-based application that allows you to keep track of y
 
 🖥 Site: [StickyBits App][def]
 
-[def]: https://sticky-notes-app-opbj.onrender.com
+[def]: https://sticky-bits-app.onrender.com
