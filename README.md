@@ -23,7 +23,7 @@ This repository contains projects completed during "The Complete 2023 Web Develo
 - **Live Demo**: [BMI Calculator](https://bmi-calculator-online.netlify.app/)
 
 ## Project 4: Dice Game
-### *JQuery Project*
+### *DOM Project*
 
 - **Description**: Two-player virtual dice rolling game.
 - **Source Code**: [GitHub Repository](https://github.com/NoohaAbdulNasar/WebDevBootcamp-Projects/tree/main/07_dice_game)
