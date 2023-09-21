@@ -1,9 +1,5 @@
-# WebDevBootcamp-Projects
-This repository contains projects completed during "The Complete 2023 Web Development Bootcamp," instructed by Angela Yu. In addition to the course projects, it also includes personal projects built during the capstone phase of the course.
-
-## Projects
-
-Listed below are the capstone and personal projects built by me during the course:
+# MERN-Stack-Projects
+This repository contains projects completed during "The Complete 2023 Web Development Bootcamp" by Angela Yu. In addition to the course projects, it also includes personal projects built during the capstone phase of the course. Listed below are my capstone and personal projects:
 
 ## Project 1: Portfolio Website
 ### *HTML AND CSS Project*
